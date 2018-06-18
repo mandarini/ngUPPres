@@ -1,0 +1,12 @@
+<div id="s_34">
+    <h4>fetch data from Firebase</h4>
+    <p>link to list: <br/>
+      <code class="code-part">let markersRef = this.db.list('/markers');</code>
+    </p>
+    <p>get data once: <br/>
+      <code class="code-part"> markersRef.query.once("value").then(snapshot => {...})</code>
+    </p>
+    <p>create Observable for newly added items: <br/>
+      <code class="code-part">let markers = markersRef.snapshotChanges(['child_added'])</code>
+    </p>
+</div>

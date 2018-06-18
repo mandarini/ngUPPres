@@ -1,0 +1,16 @@
+<div id="s_33">
+	<p>get chosen location of user and send it</p>
+	<pre class="fragment full">
+      <code class="hljs" data-trim>
+				map.addListener('click', (e) => {
+			     let marker = {
+			       position: {
+			         lat: e.latLng.lat(),
+			         lng: e.latLng.lng(),
+			       }
+			     };
+			     listRef.push(marker);
+			    });
+      </code>
+  </pre>
+</div>
